@@ -52,14 +52,14 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
 
+        mainLayout.removeAllViews();
         switch(item) {
             case "куб":
-                layoutParams.gravity = Gravity.LEFT;
-                EditText editText = new EditText(this);
-                mainLayout.addView(editText, layoutParams);
+                EditText cubeSquare = new EditText(this);
+                mainLayout.addView(cubeSquare, layoutParams);
                 break;
             case "паралелограмм":
-                mainLayout.removeAllViews();
+
                 break;
         }
     }
